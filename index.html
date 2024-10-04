@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href=" https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css " rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favor</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <ul>
+                <input type="radio" name="tabs" id="search" checked>
+                <label class="ulicons" for="search"><li><i class="ri-search-line"></i></li></label>
+                <input type="radio" name="tabs" id="list">
+                <label class="ulicons" for="list"><li><i class="ri-list-check"></i></li></label>
+                <input type="radio" name="tabs" id="memo">
+                <label class="ulicons" for="memo"><li><i class="ri-survey-line"></i></li></label>
+                <input type="radio" name="tabs" id="saves">
+                <label class="ulicons" for="saves"><li><i class="ri-save-3-line"></i></li></label>
+
+            </ul>
+        </header>
+        <div id="settings" class="setting_hide">
+            <i class="ri-close-line" onclick="settings()"></i>
+        </div>
+        <div class="contents_holder">
+            <div id="tab-search">
+                <div class="searchLINE"><i class="ri-search-line"></i><input type="text" name="search" id="search"></div>
+            </div>
+            <div id="tab-list">
+                <div><input type="text" name="list" id="bookmark-input" placeholder="＋ 追加したいお気に入りをここに入力"><input type="text" name="list" id="bookmark-input-url" placeholder="＋ URL"><i class="ri-list-settings-line" onclick="settings()"></i></div>
+                <ul id="bookmark-list">
+                    <h3><i class="ri-list-check"></i>お気に入りリスト</h3> 
+                    
+                </ul>
+            </div>
+            <div id="tab-memo">
+                <div>
+                    <input type="button" value="編集" id="edit" onclick="switch_memo()">
+                    <input type="button" value="保存" id="save" onclick="switch_memo()">
+                </div>
+                <label id="ha_wa_i">
+                    <textarea name="ha_wa_i" placeholder="メモしたい内容を入力" spellcheck="off"></textarea>
+                </label>  
+            </div>
+            <div id="tab-saves">
+                <h2>保存データ</h2>
+                <hr>
+                <input type="button" value="全データ削除" onclick="allclear()">
+            </div>
+        </div>
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

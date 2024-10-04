@@ -1,0 +1,224 @@
+/* css */
+* {
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+header {
+    width: 100%;
+    max-width: 50px;
+    background: #eeeeee;
+    box-shadow: -2px 0px 10px grey;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+header ul {
+    display: block;
+    padding: 5px;
+    width: 40px;
+}
+header ul li {
+    font-size: 20px;
+    padding: 10px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+header ul li:hover {
+    font-size: 20px;
+    padding: 10px;
+    line-height: 20px;
+}
+
+header input[type="radio"] {
+    display: none;
+}
+
+header input[type="radio"]:checked + .ulicons li {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    color: white;
+} 
+.contents_holder {
+    padding: 5px;
+    width: calc(100vw - 60px);
+    height: calc(100vh - 60px);
+    margin-left: 50px;
+}
+
+#search {
+    width: calc(100%);
+    padding: 5px;
+    padding-left: 0px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    padding-right: 15px;
+}
+.searchLINE {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 10px grey;
+    display: flex;
+}
+.searchLINE i {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+#bookmark-input {
+    width: calc(60% - 100px);
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 10px;
+}
+#tab-list div {
+    display: flex;
+}
+#tab-list div i {
+    width: 20px;
+    height: 76px;
+    line-height: 73px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#bookmark-input-url {
+    width: calc(40% - 40px);
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 10px;
+    margin-left: 0;
+}
+#bookmark-list h3 {
+    line-height: 40px;
+}
+#bookmark-list {
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0px 0px 10px grey;
+}
+#bookmark-list li {
+    display: flex;
+    padding: 10px;
+    width: calc(100% - 20px);
+    text-wrap: wrap;
+    word-wrap: break-word !important;
+    border: solid grey 1px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+#bookmark-list li a {
+    width: calc(100% - 50px);
+    text-decoration: dashed;
+    color: rgb(39, 72, 255);
+}
+
+#bookmark-list li i {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center; 
+    margin: 0 auto;
+    margin-right: 0 !important;
+    cursor: pointer;
+}
+#bookmark-list li i:hover {
+    background: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+}
+
+#settings {
+    /* width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    margin: 25px; */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #eeeeee;
+    border-radius: 10px;
+}
+#settings i.ri-close-line {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto;
+    margin-right: 0;
+}
+
+.setting_hide {
+    display: none;
+}
+
+#tab-memo div {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+}
+
+#ha_wa_i{
+    display: block;
+    /* margin: 10px 20px; */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* #ha_wa_i>textarea{
+    outline: none;
+    border: 1px grey solid;
+    border-radius: 5px;
+    line-height: 1.2em;
+    padding: 10px;
+    width: calc(100% - 25px);
+} */
+
+#ha_wa_i textarea {
+    height: calc(100vh - 80px) !important;
+    outline: none;
+    border: 1px grey solid;
+    border-radius: 5px;
+    line-height: 1.2em;
+    padding: 10px;
+    width: calc(100% - 25px);
+    resize: none;
+}
+
+.none {
+    display: none;
+}
